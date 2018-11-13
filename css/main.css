@@ -17,12 +17,12 @@ html{
 	left:51px;
 	width: 997px;
 	height: 536px;
-	background-image: url('/fontimg.png');
+	background-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
   background-size: cover;
-  -webkit-mask-image: url('/fontimg.png');
+  -webkit-mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
   -webkit-mask-mode: alpha;
   -webkit-mask-size: cover;
-  mask-image: url('/fontimg.png');
+  mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
   mask-mode: alpha;
 	mask-size: cover;
 	background-blend-mode: luminosity;
