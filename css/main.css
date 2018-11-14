@@ -7,26 +7,58 @@ html{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 600px;
+	position: relative;
+}
+.img-color-container{
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	position: relative;
 }
 .table-container{
-	position: relative;
+	width: 100%;
+	background-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/bg_img2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/bg_img2.png');
+	-webkit-mask-repeat: no-repeat;
+  -webkit-mask-mode: alpha;
+  -webkit-mask-size: contain;
+  mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/bg_img2.png');
+	mask-mode: alpha;
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	background-blend-mode: luminosity;
+	transition: 1s;
+	opacity: .9;
 }
 .font-container{
 	position: absolute;
-	top:76px;
-	left:51px;
-	width: 997px;
-	height: 536px;
-	background-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
-  background-size: cover;
-  -webkit-mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
+	width: 100%;
+	height: 100%;
+	background-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img2.png');
+	-webkit-mask-repeat: no-repeat;
   -webkit-mask-mode: alpha;
-  -webkit-mask-size: cover;
-  mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img.png');
-  mask-mode: alpha;
-	mask-size: cover;
+  -webkit-mask-size: contain;
+  mask-image: url('https://raw.githubusercontent.com/huntercront/color/master/img/font_img2.png');
+	mask-mode: alpha;
+	mask-repeat: no-repeat;
+	mask-size: contain;
 	background-blend-mode: luminosity;
 	transition: 1s;
+
+		/* https://raw.githubusercontent.com/huntercront/color/master */
+}
+span{
+	margin-top: 20px;
 }
 button{
 	color:#fff;
@@ -34,21 +66,25 @@ button{
 	border-radius: 13px;
 	outline: none;
 	border: none;
-	font-size: 20px;
+	font-size: 14px;
 	text-transform: uppercase;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
 	cursor: pointer;
-	box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.512);
+	box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.3);
 	transition: 1s;
 }
 button:hover{
-	box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0);
+	box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0);
 }
 .button-container{
+	margin-top: 100px;
+	flex-wrap: wrap;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	z-index: 20;
 }
 #red{
 	background-color: red;
@@ -57,5 +93,14 @@ button:hover{
 	background-color: green;
 }
 #royalblue{
+background-color: royalblue;
+}
+#redframe{
+	background-color: red;
+}
+#greenframe{
+	background-color: green;
+}
+#royalblueframe{
 background-color: royalblue;
 }
